@@ -1,0 +1,103 @@
+*{
+  --base-color-1: #928DAB;
+  --base-color-2: #1F1C2C;
+
+  --details-color-1: rgba(255,255,255,.3);
+  --details-color-2: rgb(255, 255, 255);
+  --details-open: rgba(32, 32, 32, 0.895);
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body{
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(var(--base-color-1), var(--base-color-2));
+}
+.container{
+  max-width: 500px;
+  margin: auto;
+}
+details{
+  text-align: center;
+  background-color: var(--details-color-1);
+  margin-bottom: 3px;
+  border-radius: 10px;
+}
+details summary{
+  padding: 10px;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+details[open]{
+  background-color: var(--details-open);
+  color: var(--details-color-2);
+}
+details[open] summary{
+  border-bottom: 2px dotted var(--details-color-2);
+}
+details p{
+  padding: 0px 0px 0px 10px;
+  text-align: left;
+}
+details p:first-of-type {
+  margin-top: 10px;
+}
+details p:last-of-type {
+  padding-bottom: 10px;
+}
+details img{
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 15px;
+  max-width: 100%;
+  min-width: 30%;
+}
+details a{
+  font-weight: bolder;
+  color: rgb(245, 230, 116);
+}
+.books__link, .task__list{
+  border: 1px solid white;
+  display: grid;
+  font-size: 1.2rem;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.books__link h2, .task__list h2{
+  border-bottom: 1px double white;
+  margin-bottom: 10px;
+}
+.books__link a, .task__list p{
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+.task__list{
+  grid-gap: 0px;
+}
+.task__list p, .books__link a{
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+.task__list p:nth-child(even), .books__link a:nth-child(even){
+  background-color: rgba(0, 0, 0, 0.16);
+}
+.empty__message{
+  padding: 20px;
+  font-size: 1.6rem;
+  color: var(--base-color-1);
+  background-color: var(--base-color-2);
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.new__line{
+  margin-bottom: 10px;
+}
+details summary::marker, details summary::-webkit-details-marker{
+  content: none;
+}

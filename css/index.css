@@ -1,0 +1,32 @@
+.container{
+  display: grid;
+}
+div.container a{
+  width: 100%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: auto;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #928DAB;
+  text-align: center;
+  background-color: #13111d;
+}
+.container a.disabled{
+  pointer-events: none;
+  color: rgba(0, 0, 0, 0.203);
+  text-shadow: none;
+}
+.prev_less{
+  display: grid;
+  grid-template-columns: 1;
+}
+.prev_less[open]{
+  padding: 0px 10px 10px 10px;
+}
+
+.prev_less[open] summary{
+  border: none;
+}
