@@ -83,13 +83,7 @@ class Lesson {
   show_tasks(short_box) {
 		const tasks = this.tasks;
 
-		if(tasks.length == 0){
-			const empty_message = document.createElement("h2");
-			empty_message.classList.add("empty__message");
-			empty_message.innerText = "Задач нет";
-			short_box.appendChild(empty_message);
-			return;
-		}
+		if(tasks.length == 0){ return -1; }
 	
 		const box = document.createElement('div');
 		box.classList.add('task__list');
@@ -110,13 +104,7 @@ class Lesson {
   show_shorts(short_box) {
 		const shorts = this.shorts;
 
-		if(shorts.length == 0 || shorts == null || shorts == undefined){
-			const empty_message = document.createElement("h2");
-			empty_message.classList.add("empty__message");
-			empty_message.innerHTML = "Не верится, но тут пусто";
-			short_box.appendChild(empty_message);
-			return;
-		}
+		if(shorts.length == 0 || shorts == null || shorts == undefined){ return -1; }
 	
 		for(let i = 0; i < shorts.length; ++i){
 			const det = document.createElement("details");
