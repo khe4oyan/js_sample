@@ -64,7 +64,7 @@ class Lesson {
 
 		const box = document.createElement('div');
 		const header_text = document.createElement('h2');
-		header_text.innerHTML = `Книг${books.length == 1 ? 'а': 'и'} (clickable)`;
+		header_text.innerHTML = `Книг${books.length == 1 ? 'а': 'и'} (ссылк${books.length == 1 ? 'а': 'и'})`;
 		box.appendChild(header_text);
 	
 		box.classList.add('books__link');

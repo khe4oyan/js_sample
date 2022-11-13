@@ -12,6 +12,7 @@ const pages = [
   "Math methods",
   "Symbol methods",
   "BigInt methods",
+  "Date methods",
 ];
 
 show_pages(pages);
