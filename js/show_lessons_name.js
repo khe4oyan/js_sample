@@ -13,6 +13,10 @@ const pages = [
   "Symbol methods",
   "BigInt methods",
   "Date methods",
+  "Var keyword, Hoisting, Globals, Decorators",
+  "NFE",
+  "Map methods",
+  "Set methods",
 ];
 
 show_pages(pages);
