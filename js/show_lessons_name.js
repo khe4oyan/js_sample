@@ -17,6 +17,7 @@ const pages = [
   "NFE",
   "Map methods",
   "Set methods",
+  "Flags & Descriptors",
 ];
 
 show_pages(pages);
